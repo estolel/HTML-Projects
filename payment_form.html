@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Payment Form</title>
+        <style>
+        html {
+            height: 100%;
+            background: url("https://i.imgur.com/7SfzDrH.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        body {
+            box-sizing:border-box;
+            text-align: left;
+            margin: 0 auto;
+            margin-top: 10pt;
+            max-width: 30%;
+            height: 95%;
+            padding: 5pt;
+            background-color: #C9CBC8CC;
+            border-radius: 5pt;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        div.title {
+            height: fit-content;
+            width: auto;
+            border: 1px solid black;
+        }
+
+        p.title {
+            width: 30px;
+            margin-top: -10px;
+            margin-left: 5px;
+            background: #C9CBC8;
+            border-radius: 5pt;
+        }
+
+        input[type="radio"]{
+            margin-top: -1px;
+            vertical-align: middle;
+        }
+    </style>
+    </head>
+
+    <body>
+        <h1>Payment form</h1>
+        <p>Required fields are followed by <strong><u>*</u></strong>.</p>
+        <h3>Contact information</h3>
+        <div class="title">
+            <p class="title">Title</p>
+            <ul>
+                <li> 
+                    <input type="radio" name="Mister" id="male_radio_button"> 
+                    <label for="male_radio_button">Mister</label>
+                </li>
+                <li> 
+                    <input type="radio" name="Miss" id="female_radio_button"> 
+                    <label for="female_radio_button">Miss</label>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <p>Name: <u>*</u> <input type="text" name="Name" id="name_textbox"></p> 
+        </div>
+        <div>
+            <p>E-mail: <u>*</u> <input type="email" name="E-mail" id="email_textbox"></p> 
+        </div>
+        <div>
+            <p>Password: <u>*</u> <input type="password" name="Password" id="password_textbox"></p> 
+        </div>
+
+        <h3>Payment information</h3>
+        <div>
+            <label for="cards">Card type:</label>
+            <select name="cards" id="cards">
+                <option value="Visa">Visa</option>
+                <option value="MasterCard">MasterCard</option>
+                <option value="Others">Others</option>
+            </select>
+        </div>
+        <div>
+            <p>Card number: <u>*</u> <input type="text" inputmode="numeric" pattern="\d*" name="card_number" id="card_number_textbox"></p> 
+        </div>
+        <div>
+            <p>Expiration date: <u>*</u> <input type="month" name="card_expiration" id="card_expiration_textbox" placeholder="mm/yy"></p> 
+        </div>
+        <input type="button" value="Validate the payment">
+    </body>
+
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Credit Card Application Form</title>
+        <style>
+        html {
+            height: 100%;
+            background: whitesmoke;
+            background-size: 100% auto;
+            background-position: center;
+            background-repeat: no-repeat;
+            text-align: center;
+            margin-top: 10pt;
+            margin-bottom: 10pt;
+            padding-bottom: 20pt;
+            overflow: auto;
+            font-style: arial;
+        }
+
+        body {
+            box-sizing:border-box;
+            text-align: left;
+            margin: 0 auto;
+            max-width: 70%;
+            width: fit-content;
+            height: fit-content;
+            padding: 20pt;
+            background-color: #4B82A3;
+            border-radius: 5pt;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            font-size: 15pt;
+            color: white;
+            position: relative;
+            border: 1px solid black;
+        }
+
+        div.title {
+            height: fit-content;
+            width: auto;
+            border: 1px solid black;
+        }
+        div.individual_info{
+            flex-wrap:wrap; 
+            align-items: flex-start;
+        }
+        div.address{
+            flex-wrap:wrap; 
+            align-items: flex-start;
+        }
+
+        p.title {
+            width: fit-content;
+            margin-top: -10px;
+            margin-left: 5px;
+            background: #4B82A3;
+            border-radius: 5pt;
+        }
+
+        input[type="radio"]{
+            margin-top: -1px;
+            vertical-align: middle;
+            padding:-5pt
+        }
+        footer{
+            margin-top: 30pt;
+            text-align: right;
+            font-size: 12pt;
+            float:bottom;
+        }
+        input[value="Validate the payment"]{
+            float:bottom;
+        }
+        img.bg {
+            height: calc(100vh);
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+    </head>
+
+    <h1>Credit Card Application Form</h1>
+    <h2>Please fill out the form</h2>
+    <hr>
+    <body>
+        <div class="individual_info">
+            <h3>Personal information</h3>
+            <label for="Gender">Gender</label>
+            <select name="Gender" id="Gender">
+                <option value="Male">Male</option>
+                <option value="Femaile">Male</option>
+                <option value="Other">Other</option>
+            </select>
+            <p>Birth date: <input type="date"></p>
+            <div>
+                <p>First Name: <input type="text" name="FirstName"
+                        id="Firstname_textbox"></p>
+
+            </div>
+            <div>
+                <p>Last Name: <input type="text" name="LastName"
+                        id="Lastname_textbox"></p>
+            </div>
+            <div>
+                <p>Middle Name: <input type="text" name="MiddleName"
+                        id="Middlename_textbox"></p>
+            </div>
+            <div>
+                <p>E-mail: <input type="email" name="E-mail"
+                        id="email_textbox"></p>
+            </div>
+        </div>
+
+        <div class="address">
+            <h3>Address information</h3>
+            <label for="cards">Country:</label>
+            <select name="cards" id="cards">
+                <option value="Lithuania">Lithuania</option>
+                <option value="Bohemia">Bohemia</option>
+                <option value="Iceland">Iceland</option>
+                <option value="Others">Others</option>
+            </select>
+            <p>State: <input type="text"></p>
+            <p>City: <input type="text"></p>
+            <p>Street Address Line 1: <input type="text"></p>
+            <p>Street Address Line 2: <input type="text"></p>
+        </div>
+        <input type="submit" value="Submit">
+        <input type="reset" value="">
+        <form action=""></form>
+        <footer>©Siwo Bank 2022</footer>
+    </body>
+
+</html>
